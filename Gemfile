@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'rspec'
-
-# gem "rails"
+gem "rspec"
+gem 'contentful-management'
+gem 'dotenv'
+gem 'pry'
