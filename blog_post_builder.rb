@@ -1,5 +1,6 @@
 require "pry"
 require "time"
+require_relative "./blog_post"
 
 class BlogPostBuilder
   def build(blog_post_hash)
