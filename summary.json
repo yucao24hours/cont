@@ -1,0 +1,28 @@
+{
+  "fileMap": {
+    "content/posts/json/2018-01-01-example-post.html.json": {
+      "layout": "post",
+      "title": "きょうの日報 2018.04.09",
+      "excerpt": "きょうの日報",
+      "dir": "content/posts/json",
+      "base": "2018-01-01-example-post.html.json",
+      "ext": ".json",
+      "sourceBase": "2018-01-01-example-post.html.md",
+      "sourceExt": ".md"
+    },
+    "content/posts/json/2018-04-17-nipo.html.json": {
+      "layout": "post",
+      "title": "きょうの日報 2018.04.17",
+      "excerpt": "きょうの日報",
+      "dir": "content/posts/json",
+      "base": "2018-04-17-nipo.html.json",
+      "ext": ".json",
+      "sourceBase": "2018-04-17-nipo.html.md",
+      "sourceExt": ".md"
+    }
+  },
+  "sourceFileArray": [
+    "2018-01-01-example-post.html.md",
+    "2018-04-17-nipo.html.md"
+  ]
+}
