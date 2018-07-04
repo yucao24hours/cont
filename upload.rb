@@ -5,8 +5,8 @@ require_relative "./contentful_uploader.rb"
 blog_post_builder = BlogPostBuilder.new
 uploader = ContentfulUploader.new(entries)
 
-Dir.glob("どこか") do |filename|
-  blog_post_hash = JsonParser.new.parse(filename) # 実質やるのは JSON.parse なのでべつにクラスにしなくてもいいだろうけど、ここにべた書きするのもなんなのでいったんこうしとく
-  post = blog_post_builder.build(blog_post_hash)
+# Dir.glob("どこか") do |filename|
+  json = File.read("dist/2018-01-01-example-post.html.json")
+  post = blog_post_builder.build(JSON.parse(json))
   uploader.upload!(post)
-end
+# end
