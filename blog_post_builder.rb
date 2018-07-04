@@ -1,18 +1,20 @@
 require "pry"
+require "time"
 
 class BlogPostBuilder
-  def build
+  def build(blog_post_hash)
     # いったんここで File.read して
     # あとから別のメソッドにする
     # ここでは new するだけにしたい
     # まずはひとつの json を扱えるようにして
     # そのあと（どこかで）Dir.glob するなりするようにする
     # なのでいったん File.read の引数はハードコーディング
+
     BlogPost.new(
-      title: parsed["title"],
-      body: parsed["bodyContent"],
-      source_file_name: File.basename(parsed["sourceBase"], ".html.md"),
-      created_at: created_at(parsed["sourceBase"])
+      title: blog_post_hash[:title],
+      body: blog_post_hash[:bodyContent],
+      source_file_name: File.basename(blog_post_hash[:sourceBase], ".html.md"),
+      created_at: created_at(blog_post_hash[:sourceBase])
     )
   end
 
