@@ -25,12 +25,8 @@ class ContentfulUploader
   #   @entries ||= environment.content_types.find(ENV['CTF_CONTENT_TYPE_ID']).entries
   # end
 
-  # upload! をよんだときに、
-  # create のパラメータに blog_post の各値を渡されてよばれたかを
-  # テストする、というふうにかける
-  # have_recieved というのをつかえる
   def upload!(blog_post)
-    entries.create(
+    @entries.create(
       title: blog_post.title,
       body: blog_post.body,
       sourceFileName: blog_post.source_file_name,
