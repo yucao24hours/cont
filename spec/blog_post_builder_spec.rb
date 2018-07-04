@@ -8,9 +8,9 @@ describe "BlogPostBuilder" do
   describe "#build" do
     let(:blog_post_hash) {
       {
-        title: "これはタイトルです",
-        bodyContent: "これは *Markdown* 形式の本文です",
-        sourceBase: "2018-01-01-hello-example.html.md",
+        "title" => "これはタイトルです",
+        "bodyContent" => "これは *Markdown* 形式の本文です",
+        "sourceBase" => "2018-01-01-hello-example.html.md",
       }
     }
 

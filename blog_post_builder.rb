@@ -12,10 +12,10 @@ class BlogPostBuilder
     # なのでいったん File.read の引数はハードコーディング
 
     BlogPost.new(
-      title: blog_post_hash[:title],
-      body: blog_post_hash[:bodyContent],
-      source_file_name: File.basename(blog_post_hash[:sourceBase], ".html.md"),
-      created_at: created_at(blog_post_hash[:sourceBase])
+      title: blog_post_hash["title"],
+      body: blog_post_hash["bodyContent"],
+      source_file_name: File.basename(blog_post_hash["sourceBase"], ".html.md"),
+      created_at: created_at(blog_post_hash["sourceBase"])
     )
   end
 
