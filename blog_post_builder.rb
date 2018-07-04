@@ -26,7 +26,8 @@ class BlogPostBuilder
     JSON.parse(File.read("dist/2018-04-17-nipo.html.json"))
   end
 
-  # これは private でいい気がする
+  private
+
   def created_at(source_base)
     Time.parse(source_base.match(/([\d]{4})-([\d]{2})-([\d]{2})/).to_s).to_s
   end

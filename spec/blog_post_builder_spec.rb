@@ -31,10 +31,4 @@ describe "BlogPostBuilder" do
   #     expect(parsed).to be
   #   end
   # end
-
-  # describe "#created_at" do
-  #   it "yyyy-mm-dd-slug の文字列を受け取り、yyyy-mm-dd のタイムゾーン付き文字列を返すこと" do
-  #     expect(builder.created_at("2018-01-01-example")).to eq "2018-01-01 00:00:00 +0900"
-  #   end
-  # end
 end
