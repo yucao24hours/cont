@@ -23,12 +23,4 @@ describe "BlogPostBuilder" do
       expect(blog_post.created_at).to eq "2018-01-01 00:00:00 +0900"
     end
   end
-
-  # # XXX これはこのクラス外でやる
-  # describe "#parsed" do
-  #   it do
-  #     parsed = builder.parsed
-  #     expect(parsed).to be
-  #   end
-  # end
 end
