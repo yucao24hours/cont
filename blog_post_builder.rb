@@ -19,14 +19,6 @@ class BlogPostBuilder
     )
   end
 
-  def parsed
-    # 毎回ファイルを読み込まれているので効率が悪い
-    # ディレクトリをハードコーディングするとテストするとき
-    # テストデータに差し替えづらいので、
-    # パスを引数として受け渡す方式のほうがよさそう
-    JSON.parse(File.read("dist/2018-04-17-nipo.html.json"))
-  end
-
   private
 
   def created_at(source_base)
