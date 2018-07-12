@@ -30,6 +30,7 @@ class BlogPostBuilder
   private
 
   def created_at(source_base)
-    Time.parse(source_base.match(/([\d]{4})-([\d]{2})-([\d]{2})/).to_s).to_s
+    # Timezone を明示的に指定したほうがいい（TZ が違う PC でこのテストを実行したら落ちる）
+    Time.parse(source_base.sub(/(\A[\d]{4}-[\d]{2}-[\d]{2}).*/){ $1 }).to_s
   end
 end
