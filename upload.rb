@@ -2,6 +2,7 @@ require_relative "./blog_post_builder.rb"
 require_relative "./contentful_uploader.rb"
 require_relative "./contentful_client.rb"
 
+blog_post_builder = BlogPostBuilder.new
 uploader = ContentfulUploader.new(ContentfulClient.new.entries)
 
 # Dir.glob("どこか") do |filename|
