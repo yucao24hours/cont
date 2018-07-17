@@ -10,7 +10,7 @@ describe "ContentfulUploader" do
       title: "これはタイトルです",
       body: "これは *Markdown* 形式の本文です",
       source_file_name: "2018-01-01-example",
-      created_at: "2018-01-01 00:00:00 +0900"
+      date: "2018-01-01 00:00:00 +0900"
     )
   }
 
@@ -22,7 +22,7 @@ describe "ContentfulUploader" do
         title: "これはタイトルです",
         body: "これは *Markdown* 形式の本文です",
         sourceFileName: "2018-01-01-example",
-        createdAt: "2018-01-01 00:00:00 +0900"
+        date: "2018-01-01 00:00:00 +0900"
       )
     end
   end

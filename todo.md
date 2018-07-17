@@ -1,5 +1,5 @@
 ## BlogPost
-- [ ] created_at を date という名前に変える
+- [x] created_at を date という名前に変える
 - [ ] slug フィールドを追加する
 
 ## upload.rb

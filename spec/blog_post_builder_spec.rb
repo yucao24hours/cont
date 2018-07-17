@@ -20,7 +20,7 @@ describe "BlogPostBuilder" do
       expect(blog_post.title).to eq "これはタイトルです"
       expect(blog_post.body).to eq "これは *Markdown* 形式の本文です"
       expect(blog_post.source_file_name).to eq "2018-01-01-hello-example"
-      expect(blog_post.created_at).to eq "2018-01-01 00:00:00 +0900"
+      expect(blog_post.date).to eq "2018-01-01 00:00:00 +0900"
     end
   end
 end
